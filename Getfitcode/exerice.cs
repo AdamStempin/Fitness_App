@@ -35,9 +35,25 @@ namespace Fitness_App.Getfitcode
             ArnoldPress,
             Zdvíhanieramien,
             MilitaryPress,
-
-
         }
+        public enum ruky
+        {
+            Pushups,
+            TricepExtension,
+            Dips,
+            Curl,
+            Flies,
+        }
+        public enum brucho
+        {
+            Plank,
+            Crunches,
+            LegRaises,
+            BicycleCrunches,
+            RussianTwists,
+        }
+
+        
 
        
 
