@@ -23,5 +23,12 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="42,79,0,0" TextWrapping="Wrap" Text="DNES:" VerticalAlignment="Top" Width="50" BorderBrush="#00000000" Background="Transparent" FontSize="15" TextChanged="TextBox_TextChanged" Foreground="White" FontFamily="Rockwell"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="42,98,0,0" TextWrapping="Wrap" Text="Streda 1.marca" VerticalAlignment="Top" Width="134" Foreground="#FFD6D6D6" FontSize="20" FontFamily="Segoe UI Variable Display"/>
+        <TextBlock HorizontalAlignment="Left" Margin="74,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF13FF00" FontSize="25"><Run Language="sk-sk" Text="NOHY"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="200,79,0,0" TextWrapping="Wrap" Text="ZAJTRA:" VerticalAlignment="Top" Width="72" BorderBrush="#00000000" Background="Transparent" FontSize="15" TextChanged="TextBox_TextChanged" Foreground="White" FontFamily="Rockwell"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="206,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Foreground="#FFD6D6D6" FontSize="20" FontFamily="Segoe UI Variable Display"><Run Language="sk-sk" Text="Štvrtok 2"/><Run Text=".marca"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="230,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Red" FontSize="25" Text="VOĽNO"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="378"/>
     </Grid>
 </Window>
