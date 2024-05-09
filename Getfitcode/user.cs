@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fitness_App.Getfitcode
 {
-    public class user
+    public class User
     {
         public int ID { get; set; }
         public int Weight { get; set; }
@@ -16,7 +16,7 @@ namespace Fitness_App.Getfitcode
         public DateTime BirthDay { get; set; }
         public Gender Gender { get; set; }
         
-        public user(int iD, int weight,int height,string fullName, string city, DateTime birthDay, Gender gender)
+        public User(int iD, int weight,int height,string fullName, string city, DateTime birthDay, Gender gender)
         {
             ID = iD;
             Weight= weight;

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Fitness_App.Getfitcode
 {
-    public class exercise
+    public class Exercise
     {
         public string Nohy { get; set; }
         public string Ramena { get; set; }
         public string Ruky { get; set; }
         public string Brucho { get; set; }
 
-        public exercise(string nohy,string ramena,string ruky, string brucho) 
+        public Exercise(string nohy,string ramena,string ruky, string brucho) 
         { 
          Nohy = nohy;
          Ramena = ramena;
@@ -22,7 +22,7 @@ namespace Fitness_App.Getfitcode
         }
         public enum nohy
         {
-            drepy,
+            squats,
             legpress,
             Predkopávanie,
             výpady,

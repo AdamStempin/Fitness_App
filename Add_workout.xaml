@@ -1,0 +1,39 @@
+﻿<Window x:Class="Fitness_App.Add_workout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fitness_App"
+        mc:Ignorable="d"
+        Title="Add_workout" ResizeMode="NoResize" Height="700" Width="400">
+    <Grid>
+        <Rectangle x:Name="menu" HorizontalAlignment="Center" Height="39" Margin="0,10,0,0" Stroke="Black"  VerticalAlignment="Top" Width="380" Fill="#FFA6C0FF"  />
+        <Image x:Name="name" HorizontalAlignment="Left" Height="36" Margin="153,12,0,0" VerticalAlignment="Top" Width="114" Source="/text-1714461746535.png" RenderTransformOrigin="0.713,0.492"/>
+        <Image x:Name="settings" HorizontalAlignment="Left" Height="27" Margin="346,16,0,0"
+         VerticalAlignment="Top" Width="31" Source="/settings.png"/>
+        <Image x:Name="login" HorizontalAlignment="Left" Height="37" Margin="0,12,0,0" VerticalAlignment="Top" Width="43" Source="/user-removebg-preview.png" RenderTransformOrigin="-0.031,0.878"/>
+        <Rectangle HorizontalAlignment="Center" Height="609" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="380" Fill="#FFE0E0E0"/>
+        <Image Margin="200,471,-27,36" Source="/stiahnut.png" Stretch="Fill"/>
+        <Image Margin="22,487,232,36" Source="/stiahnut_1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBox x:Name="CastTela" HorizontalAlignment="Left" Margin="22,72,0,0" TextWrapping="Wrap" Text="Časť tela :" VerticalAlignment="Top" Width="150"  Background="#FFA6C0FF" Height="40" FontSize="20" FontWeight="Bold" FontFamily="Ebrima" BorderBrush="Black"/>
+        <TextBox x:Name="Cviky" HorizontalAlignment="Left" Margin="22,186,0,0" TextWrapping="Wrap" Text="Cviky :" VerticalAlignment="Top" Width="150" Background="#FFA6C0FF" Height="40" FontSize="20" FontWeight="Bold" FontFamily="Ebrima" BorderBrush="Black"/>
+        <TextBox x:Name="Date" HorizontalAlignment="Left" Margin="22,302,0,0" TextWrapping="Wrap" Text="Dátum" VerticalAlignment="Top" Width="150"  Background="#FFA6C0FF" Height="40" FontSize="20" FontWeight="Bold"
+FontFamily="Ebrima" BorderBrush="Black"/>
+        <Button x:Name="Zavriet" Content="Zavrieť" HorizontalAlignment="Left" Margin="42,398,0,0" VerticalAlignment="Top" Height="58" Width="130" Background="#FFED0B0B" FontSize="20" FontWeight="Bold" FontFamily="Ebrima"/>
+        <Button x:Name="Ulozit" Content="Uložiť" HorizontalAlignment="Left" Margin="229,398,0,0" VerticalAlignment="Top" Height="58" Width="130" Background="#FF6DED0B" FontSize="20" FontWeight="Bold" FontFamily="Ebrima"/>
+        <ComboBox HorizontalAlignment="Left" Margin="214,72,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
+        <ComboBox HorizontalAlignment="Left" Margin="214,302,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
+        <ComboBox HorizontalAlignment="Left" Margin="214,186,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
+
+
+    </Grid>
+</Window>
