@@ -25,9 +25,11 @@ namespace Fitness_App
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Add_workout(object sender, RoutedEventArgs e)
         {
-
+            var window = new Add_workout();
+            window.ShowDialog();
+            
         }
     }
 }
