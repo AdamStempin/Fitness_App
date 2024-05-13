@@ -29,7 +29,7 @@
         <TextBox x:Name="Date" HorizontalAlignment="Left" Margin="22,302,0,0" TextWrapping="Wrap" Text="Dátum" VerticalAlignment="Top" Width="150"  Background="#FFA6C0FF" Height="40" FontSize="20" FontWeight="Bold"
 FontFamily="Ebrima" BorderBrush="Black"/>
         <Button x:Name="Zavriet" Content="Zavrieť" HorizontalAlignment="Left" Margin="42,398,0,0" VerticalAlignment="Top" Height="58" Width="130" Background="#FFED0B0B" FontSize="20" FontWeight="Bold" FontFamily="Ebrima" Click="Zavriet_Click"/>
-        <Button x:Name="Ulozit" Content="Uložiť" HorizontalAlignment="Left" Margin="229,398,0,0" VerticalAlignment="Top" Height="58" Width="130" Background="#FF6DED0B" FontSize="20" FontWeight="Bold" FontFamily="Ebrima" Click="Ulozit_Click"/>
+        <Button x:Name="Ulozit" Content="Uložiť" HorizontalAlignment="Left" Margin="229,398,0,0" VerticalAlignment="Top" Height="58" Width="130" Background="#FF6DED0B" FontSize="20" FontWeight="Bold" FontFamily="Ebrima" Click="Ulozit_Click" />
         <ComboBox x:Name="telo_combobox" HorizontalAlignment="Left" Margin="214,72,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
         <ComboBox x:Name="cviky_combobox" HorizontalAlignment="Left" Margin="214,186,0,0" VerticalAlignment="Top" Width="146" Height="40"/>
         <DatePicker x:Name="date_pick" HorizontalAlignment="Left" Margin="214,302,0,0" VerticalAlignment="Top" Height="40" Width="146"/>

@@ -23,6 +23,8 @@ namespace Fitness_App
     /// </summary>
     public partial class Add_workout : Window
     {
+        
+
         public Add_workout()
         {
             InitializeComponent();
@@ -30,7 +32,10 @@ namespace Fitness_App
            
             InitializeComponent();
             cviky_combobox.ItemsSource = Enum.GetValues(typeof(nohy));
+            
            
+           
+
 
         }
 
@@ -41,16 +46,13 @@ namespace Fitness_App
 
         private void Ulozit_Click(object sender, RoutedEventArgs e)
         {
-            var exercise = Exercise.Instance;
+            var Exercise = Add_workout.Instance;
 
-            var CastTela = ;
-            var Cviky = ;
+            var CastTela = (Exercise)Enum.Parse(typeof(cast_tela); 
+            var Cviky = (Exercise)Enum.Parse(typeof(nohy). cviky_combobox.SelectedValue.ToString(), true); ;
             var Date = date_pick.SelectedDate.Value.Date;
 
-            var newExercise = new Exercise(telo_combobox,
-                                           cviky_combobox,
-                                           date_pick);
-            exercise.Books.Add(newExercise);
+            Exercise newExercise = new Exercise(CastTela, Cviky, Date,);
             Close();
         }
     }

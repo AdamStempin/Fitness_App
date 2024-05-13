@@ -37,7 +37,7 @@ namespace Fitness_App.Getfitcode
         public enum cast_tela
         {
             nohy,
-            ramena,
+            chrbat,
             ruky,
             brucho,
         }
