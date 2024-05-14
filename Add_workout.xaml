@@ -12,7 +12,7 @@
         <Image x:Name="settings" HorizontalAlignment="Left" Height="27" Margin="346,16,0,0"
          VerticalAlignment="Top" Width="31" Source="/settings.png"/>
         <Image x:Name="login" HorizontalAlignment="Left" Height="37" Margin="0,12,0,0" VerticalAlignment="Top" Width="43" Source="/user-removebg-preview.png" RenderTransformOrigin="-0.031,0.878"/>
-        <Rectangle HorizontalAlignment="Center" Height="609" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="380" Fill="#FFE0E0E0"/>
+        <Rectangle HorizontalAlignment="Left" Height="609" Margin="0,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="380" Fill="#FFE0E0E0"/>
         <Image Margin="200,471,-27,36" Source="/stiahnut.png" Stretch="Fill"/>
         <Image Margin="22,487,232,36" Source="/stiahnut_1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>

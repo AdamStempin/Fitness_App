@@ -31,5 +31,10 @@ namespace Fitness_App
             window.ShowDialog();
             
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
