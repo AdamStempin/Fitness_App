@@ -29,13 +29,30 @@ namespace Fitness_App
         {
             InitializeComponent();
             telo_combobox.ItemsSource = Enum.GetValues(typeof(cast_tela));
-           
+
             cviky_combobox.ItemsSource = Enum.GetValues(typeof(nohy));
-            
-           
-           
 
+        }
 
+        public void UpdateCviky(object sender, RoutedEventArgs e)
+        {
+            var cast = telo_combobox.SelectedValue.ToString();
+            switch (cast) 
+            {
+                case "nohy" :
+                    cviky_combobox.ItemsSource = Enum.GetValues(typeof(nohy));
+                    break;
+                case "ruky":
+                    cviky_combobox.ItemsSource = Enum.GetValues(typeof(ruky));
+                    break;
+                case "chrbat":
+                    cviky_combobox.ItemsSource = Enum.GetValues(typeof(chrbat));
+                    break;
+                case "brucho":
+                    cviky_combobox.ItemsSource = Enum.GetValues(typeof(brucho));
+                    break;
+
+            }
         }
 
         private void Zavriet_Click(object sender, RoutedEventArgs e)
@@ -51,10 +68,11 @@ namespace Fitness_App
             var CastTela = telo_combobox.Text;
             var Cviky = cviky_combobox.Text;
             var date = date_pick.SelectedDate.Value.Date;
-            var newExercise = new Exercise();
-            posledne_treningy..Add(newExercise);
+            var newExercise = new Exercise(CastTela , Cviky , date);
+            posledne_treningy.Add(newExercise);
             Close();
         }
+           
 
             
     }

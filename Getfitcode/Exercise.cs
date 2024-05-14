@@ -45,19 +45,19 @@ namespace Fitness_App.Getfitcode
         
         public enum nohy
         {
-            squats,
-            legpress,
+            Squats,
+            Legpress,
             Predkopávanie,
-            výpady,
+            Výpady,
             Deadlift,
         }
-        public enum ramena
+        public enum chrbat
         {
-            LateralRaises,
-            Prednézdvíhanie,
-            ArnoldPress,
-            Zdvíhanieramien,
-            MilitaryPress,
+            PullUps,
+            BentOverBarbellRow,
+            Deadlift,
+            SeatedCableRow,
+            Hyperextension,
         }
         public enum ruky
         {
@@ -76,12 +76,9 @@ namespace Fitness_App.Getfitcode
             RussianTwists,
         }
 
-        
-
-       
-
-
-
-
+        internal static object Write(Func<object, object> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -24,13 +24,22 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="42,79,0,0" TextWrapping="Wrap" Text="DNES:" VerticalAlignment="Top" Width="50" BorderBrush="#00000000" Background="Transparent" FontSize="15"  Foreground="White" FontFamily="Rockwell"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="42,98,0,0" TextWrapping="Wrap" Text="Streda 1.marca" VerticalAlignment="Top" Width="134" Foreground="#FFD6D6D6" FontSize="20" FontFamily="Segoe UI Variable Display"/>
         <TextBlock HorizontalAlignment="Left" Margin="74,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF13FF00" FontSize="25"><Run Language="sk-sk" Text="NOHY"/></TextBlock>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="200,79,0,0" TextWrapping="Wrap" Text="ZAJTRA:" VerticalAlignment="Top" Width="72" BorderBrush="#00000000" Background="Transparent" FontSize="15"  Foreground="White" FontFamily="Rockwell"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="206,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Foreground="#FFD6D6D6" FontSize="20" FontFamily="Segoe UI Variable Display"><Run Language="sk-sk" Text="Štvrtok 2"/><Run Text=".marca"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="230,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Red" FontSize="25" Text="VOĽNO"/>
         <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="378"/>
         <Button x:Name="pridanie_cviku" Content="Pridať cvik" HorizontalAlignment="Left" Height="113" Margin="42,241,0,0" VerticalAlignment="Top" Width="304" Background="#FFA6C0FF" FontSize="50" FontFamily="Impact" Click="Add_workout"/>
-        <ListBox x:Name="posledne_treningy" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,402,11,10" SelectionChanged="ListBox_SelectionChanged"/>
+        <Label x:Name="Datum" Content="" HorizontalAlignment="Left" Margin="42,98,0,0" VerticalAlignment="Top" Width="142" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" Background="{x:Null}" Foreground="White">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.088"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="zajtra" Content="" HorizontalAlignment="Left" Margin="200,98,0,0" VerticalAlignment="Top" Width="142" FontWeight="Bold" FontSize="20" Foreground="White"/>
+        <Grid Margin="11,402,10,26"/>
     </Grid>
 </Window>
