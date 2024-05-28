@@ -32,7 +32,7 @@ namespace Fitness_App.Getfitcode
     {
         male,
         female,
-        helicopter,
+        
 
     }
 

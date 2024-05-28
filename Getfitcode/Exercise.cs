@@ -10,29 +10,28 @@ namespace Fitness_App.Getfitcode
     public class Exercise
     {
         internal static object Instance;
-
-        public string Nohy { get; set; }
-        public string Ramena { get; set; }
-        public string Ruky { get; set; }
-        public string Brucho { get; set; }
-        public ComboBox Telo_combobox { get; }
-        public ComboBox Cviky_combobox { get; }
+        public string Telo_combobox { get; set; }
+        public string Cvičenia { get; set; }
+       
         public DatePicker Date_pick { get; }
 
-        public Exercise(string nohy,string ramena,string ruky, string brucho) 
-        { 
-         Nohy = nohy;
-         Ramena = ramena;
-         Ruky = ruky;
-         Brucho = brucho;
-        }
-
-        public Exercise(ComboBox telo_combobox, ComboBox cviky_combobox, DatePicker date_pick)
+        public Exercise( DatePicker date_pick,string telo , string cvicenie) 
         {
-            Telo_combobox = telo_combobox;
-            Cviky_combobox = cviky_combobox;
+            Telo_combobox = telo;
+            Cvičenia = cvicenie;
             Date_pick = date_pick;
         }
+
+        public override string? ToString()
+        {
+            string s1 = String.Format("{0:MM/dd/yyyy}", Date_pick.SelectedDate); 
+            return Telo_combobox+" "+Cvičenia+" "+s1;
+        }    
+            
+   
+       
+
+       
 
         public enum cast_tela
         {

@@ -24,6 +24,9 @@ namespace Fitness_App
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
+        public List<Exercise> AllExercise { get; set; } = new List<Exercise>();
         public MainWindow()
         {
             InitializeComponent();
@@ -32,9 +35,10 @@ namespace Fitness_App
 
         private void Add_workout(object sender, RoutedEventArgs e)
         {
-            var window = new Add_workout();
+            var window = new Add_workout(AllExercise);
             window.ShowDialog();
-            
+            RefreshAllExercises();
+
         }
         private void Dnes()
         {
@@ -42,16 +46,22 @@ namespace Fitness_App
             var zajtra1 = DateTime.Now.AddDays(1);
             zajtra.Content = zajtra1.ToShortDateString();
         }
-            
 
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void RefreshAllExercises()
         {
-            posledne_treningy.Items.Clear();
-            foreach (var exercise in Exercise.Write(x => !x.posledne_treningy).ToList())
+            Exercises.Items.Clear();
+            foreach (var exercise in AllExercise.ToList())
             {
-                posledne_treningy.Items.Add(exercise.ToString());
+                Exercises.Items.Add(exercise.ToString());
             }
+
+
+        }
+
+        private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
