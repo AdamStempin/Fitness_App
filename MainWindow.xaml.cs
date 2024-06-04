@@ -45,6 +45,10 @@ namespace Fitness_App
             Datum.Content = DateTime.Now.ToShortDateString();
             var zajtra1 = DateTime.Now.AddDays(1);
             zajtra.Content = zajtra1.ToShortDateString();
+
+
+
+
         }
 
 
@@ -62,6 +66,12 @@ namespace Fitness_App
         private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void AddUser(object sender, MouseButtonEventArgs e)
+        {
+            var window = new AddUser();
+            window.ShowDialog();
         }
     }
 }

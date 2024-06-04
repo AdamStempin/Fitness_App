@@ -10,9 +10,9 @@
         <Rectangle x:Name="menu" HorizontalAlignment="Center" Height="39" Margin="0,10,0,0" Stroke="Black"  VerticalAlignment="Top" Width="380" Fill="#FFA6C0FF"  />
         <Image x:Name="name" HorizontalAlignment="Left" Height="36" Margin="153,12,0,0" VerticalAlignment="Top" Width="114" Source="/text-1714461746535.png" RenderTransformOrigin="0.713,0.492"/>
         <Image x:Name="settings" HorizontalAlignment="Left" Height="27" Margin="346,16,0,0" VerticalAlignment="Top" Width="31" Source="/settings.png"/>
-        <Image x:Name="login" HorizontalAlignment="Left" Height="37" Margin="0,12,0,0" VerticalAlignment="Top" Width="43" Source="/user-removebg-preview.png" RenderTransformOrigin="-0.031,0.878"/>
+        <Image x:Name="login" HorizontalAlignment="Left" Height="37" Margin="0,12,0,0" VerticalAlignment="Top" Width="43" Source="/user-removebg-preview.png" RenderTransformOrigin="-0.031,0.878" MouseDown="AddUser"/>
         <Rectangle HorizontalAlignment="Center" Height="609" Margin="0,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="380" Fill="#FFE0E0E0"/>
-        <Rectangle x:Name="Program" HorizontalAlignment="Left" Height="103" Margin="34,68,0,0" Stroke="Black" VerticalAlignment="Top" Width="320" RadiusX="10" RadiusY="16" Fill="#FF3C3C3C"/>
+        <Rectangle x:Name="Program" HorizontalAlignment="Center" Height="103" Margin="0,68,0,0" Stroke="Black" VerticalAlignment="Top" Width="320" RadiusX="10" RadiusY="16" Fill="#FF3C3C3C"/>
         <Rectangle HorizontalAlignment="Left" Height="101" Margin="192,69,0,0" Stroke="White" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5" Fill="#FFF7F5F5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -41,7 +41,7 @@
         </Label>
         <Label x:Name="zajtra" Content="" HorizontalAlignment="Left" Margin="200,98,0,0" VerticalAlignment="Top" Width="142" FontWeight="Bold" FontSize="20" Foreground="White"/>
         <Grid Margin="11,402,10,26">
-            <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="1,0,0,0">
+            <ListView x:Name="Exercises" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="1,0,0,0" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.402,0.552" Background="#FFCECCCC">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn/>
