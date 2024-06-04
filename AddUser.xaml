@@ -21,7 +21,7 @@
             <TextBox x:Name="EmailTextBox" Text="E-mail" Margin="0,10" Background="#FF7CA2FF" Foreground="Black" Padding="10"/>
             <PasswordBox x:Name="PasswordBox" Password="Password" Margin="0,10" Foreground="Black" Padding="10" Background="#FF7CA2FF"/>
             <Button Content="Sign in with Facebook" Background="#3B5998" Foreground="White" Height="35" Width="300" FontSize="15"/>
-            <Button Content="Sign in with Google" Background="#FFFFFF" Foreground="Black" BorderBrush="Black" Height="39" Width="302" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" FontSize="15">
+            <Button Content="Sign in with Google" Background="#FFFFFF" Foreground="Black" BorderBrush="Black" Height="39" Width="302" RenderTransformOrigin="0.5,0.5" FontSize="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>

@@ -38,6 +38,7 @@ namespace Fitness_App
             var window = new Add_workout(AllExercise);
             window.ShowDialog();
             RefreshAllExercises();
+            Dnes();
 
         }
         private void Dnes()
@@ -46,6 +47,21 @@ namespace Fitness_App
             var zajtra1 = DateTime.Now.AddDays(1);
             zajtra.Content = zajtra1.ToShortDateString();
 
+
+
+            var cvik_dnes = AllExercise.Where(x => x.Date_pick.Date == DateTime.Now.Date).FirstOrDefault();
+            var cvik_zajtra = AllExercise.Where(x => x.Date_pick.Date == DateTime.Now.AddDays(1).Date).FirstOrDefault();
+
+            if (cvik_dnes != null)
+            { 
+              label_cvik_dnes.Content = cvik_dnes.Telo_combobox;
+            }
+            if(cvik_zajtra != null)
+            {
+              label_cvik_zajtra.Content = cvik_zajtra.Telo_combobox;
+            }  
+              
+             
 
 
 

@@ -24,9 +24,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="42,79,0,0" TextWrapping="Wrap" Text="DNES:" VerticalAlignment="Top" Width="50" BorderBrush="#00000000" Background="Transparent" FontSize="15"  Foreground="White" FontFamily="Rockwell"/>
-        <TextBlock HorizontalAlignment="Left" Margin="74,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF13FF00" FontSize="25"><Run Language="sk-sk" Text="NOHY"/></TextBlock>
         <TextBox HorizontalAlignment="Left" Height="19" Margin="200,79,0,0" TextWrapping="Wrap" Text="ZAJTRA:" VerticalAlignment="Top" Width="72" BorderBrush="#00000000" Background="Transparent" FontSize="15"  Foreground="White" FontFamily="Rockwell"/>
-        <TextBlock HorizontalAlignment="Left" Margin="230,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Red" FontSize="25" Text="VOĽNO"/>
         <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,207,0,0" Stroke="Black" VerticalAlignment="Top" Width="378"/>
         <Button x:Name="pridanie_cviku" Content="Pridať cvik" HorizontalAlignment="Left" Height="113" Margin="42,241,0,0" VerticalAlignment="Top" Width="304" Background="#FFA6C0FF" FontSize="50" FontFamily="Impact" Click="Add_workout"/>
         <Label x:Name="Datum" Content="" HorizontalAlignment="Left" Margin="42,98,0,0" VerticalAlignment="Top" Width="142" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="20" Background="{x:Null}" Foreground="White">
@@ -49,5 +47,7 @@
                 </ListView.View>
             </ListView>
         </Grid>
+        <Label x:Name="label_cvik_dnes" Content="-------" HorizontalAlignment="Left" Margin="67,120,0,0" VerticalAlignment="Top" Height="43" Width="111" FontSize="25" Background="Transparent" Foreground="#FF5EFF07"/>
+        <Label x:Name="label_cvik_zajtra" Content="-------" HorizontalAlignment="Left" Margin="216,120,0,0" VerticalAlignment="Top" Height="43" Width="110" FontSize="25" Background="Transparent" Foreground="#FFFF0707"/>
     </Grid>
 </Window>
