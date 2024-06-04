@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Reflection.Emit;
@@ -16,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 
 namespace Fitness_App
 {
@@ -24,7 +26,7 @@ namespace Fitness_App
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        
 
         public List<Exercise> AllExercise { get; set; } = new List<Exercise>();
         public MainWindow()
@@ -61,11 +63,11 @@ namespace Fitness_App
               label_cvik_zajtra.Content = cvik_zajtra.Telo_combobox;
             }  
               
-             
+        }     
 
 
 
-        }
+       
 
 
         private void RefreshAllExercises()
@@ -89,5 +91,7 @@ namespace Fitness_App
             var window = new AddUser();
             window.ShowDialog();
         }
+       
     }
 }
+    
