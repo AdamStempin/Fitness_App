@@ -7,6 +7,8 @@ using System.Linq;
 using System.Numerics;
 using System.Reflection.Emit;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,12 +28,16 @@ namespace Fitness_App
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
 
         public List<Exercise> AllExercise { get; set; } = new List<Exercise>();
         public MainWindow()
         {
             InitializeComponent();
+
+
+            LoadData();
+
             Dnes();
         }
 
@@ -39,6 +45,7 @@ namespace Fitness_App
         {
             var window = new Add_workout(AllExercise);
             window.ShowDialog();
+
             RefreshAllExercises();
             Dnes();
 
@@ -55,19 +62,19 @@ namespace Fitness_App
             var cvik_zajtra = AllExercise.Where(x => x.Date_pick.Date == DateTime.Now.AddDays(1).Date).FirstOrDefault();
 
             if (cvik_dnes != null)
-            { 
-              label_cvik_dnes.Content = cvik_dnes.Telo_combobox;
-            }
-            if(cvik_zajtra != null)
             {
-              label_cvik_zajtra.Content = cvik_zajtra.Telo_combobox;
-            }  
-              
-        }     
+                label_cvik_dnes.Content = cvik_dnes.Telo_combobox;
+            }
+            if (cvik_zajtra != null)
+            {
+                label_cvik_zajtra.Content = cvik_zajtra.Telo_combobox;
+            }
+
+        }
 
 
 
-       
+
 
 
         private void RefreshAllExercises()
@@ -91,7 +98,33 @@ namespace Fitness_App
             var window = new AddUser();
             window.ShowDialog();
         }
-       
+
+        private void settings_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            var json = JsonSerializer.Serialize(AllExercise);
+            File.WriteAllText("C:\\Users\\adamk\\Downloads\\test.json", json);
+
+
+        }
+        private void LoadData()
+        {
+
+            var jsonFile = File.ReadAllText("C:\\Users\\adamk\\Downloads\\test.json");
+           var sssAllExercisedd = JsonSerializer.Deserialize<List<Exercise>>(jsonFile);
+
+
+        }
+
+        private void SaveData()
+        {
+
+        }
     }
+
+
+
+
+
 }
-    
+
+

@@ -35,10 +35,10 @@ namespace Fitness_App.Getfitcode
 
         public enum cast_tela
         {
-            nohy,
-            chrbat,
-            ruky,
-            brucho,
+            NOHY,
+            CHRBAT,
+            RUKY,
+            BRUCHO,
         }
         
         
@@ -49,6 +49,7 @@ namespace Fitness_App.Getfitcode
             Predkopávanie,
             Výpady,
             Deadlift,
+            SKIP,
         }
         public enum chrbat
         {
