@@ -36,7 +36,7 @@ namespace Fitness_App
             InitializeComponent();
 
 
-            LoadData();
+            
 
             Dnes();
         }
@@ -99,21 +99,7 @@ namespace Fitness_App
             window.ShowDialog();
         }
 
-        private void settings_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            var json = JsonSerializer.Serialize(AllExercise);
-            File.WriteAllText("C:\\Users\\adamk\\Downloads\\test.json", json);
-
-
-        }
-        private void LoadData()
-        {
-
-            var jsonFile = File.ReadAllText("C:\\Users\\adamk\\Downloads\\test.json");
-           var sssAllExercisedd = JsonSerializer.Deserialize<List<Exercise>>(jsonFile);
-
-
-        }
+        
 
         private void SaveData()
         {
