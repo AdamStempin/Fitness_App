@@ -49,7 +49,7 @@ namespace Fitness_App.Getfitcode
             Predkopávanie,
             Výpady,
             Deadlift,
-            SKIP,
+            
         }
         public enum chrbat
         {

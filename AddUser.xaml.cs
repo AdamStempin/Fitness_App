@@ -69,14 +69,17 @@ namespace Fitness_App
                 }
             }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void google_Click(object sender, RoutedEventArgs e)
         {
-
-
+            var window = new Signupgoogle();
+            window.ShowDialog();
         }
 
-        
-  }
+        private void next_Click(object sender, RoutedEventArgs e)
+        {
+            Close();    
+        }
+    }
 }
 
 
